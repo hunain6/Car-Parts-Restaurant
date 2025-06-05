@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1139697726/photo/car-engine-disassembled-many-parts.webp?b=1&s=170667a&w=0&k=20&c=jsxB7o25i-zM3WbVprfGKVtkqAWq-QRtPJkGeAMUwSg=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: crimson;
+    margin-top: 50px;
+    color: orange;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .part {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .part img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .part:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .part-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .part:hover .part-info {
+    opacity: 1;
+  }
+  
+  .part-info h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  .part-info p {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+  
